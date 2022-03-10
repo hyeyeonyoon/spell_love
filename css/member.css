@@ -1,0 +1,39 @@
+@charset "utf-8";
+
+
+#member_form{width: 1200px; margin: 0 auto; padding: 300px 10px 100px; display: flex; justify-content: center;}
+#member_form form{width: 400px;}
+#member_form form h2{font-size: 28px; text-align: center; letter-spacing: -2px; font-weight: 300; padding-bottom: 40px;}
+
+#member_form form .menu{padding-bottom: 80px;}
+#member_form form .menu ul{display: flex;}
+#member_form form .menu ul li{margin: 0 35px;}
+#member_form form .menu ul li a{display: block; font-size: 12px; color: #555; position: relative;}
+#member_form form .menu ul li a:before{content: ""; display: block; position: absolute; bottom: 0; width: 0%; height: 1px; background-color: #555; transition: width 0.3s;}
+#member_form form .menu ul li:hover a:before{width: 100%;}
+
+#member_form form .form{padding-bottom: 40px;}
+#member_form form .form .label_box{}
+#member_form form .form .label_box label{font-size: 16px; font-weight: 400; letter-spacing: -1px; color: #555;;}
+
+#member_form form .form .input_box{}
+#member_form form .form .input_box input{width: 100%; height: 40px; border: none; border-bottom: 1px solid #555; outline-color: #555;;}
+#member_form form .form .input_box input::placeholder{font-size: 16px; font-weight: 400; color: #555;}
+
+#member_form form .form .add_btn{display: flex; justify-content: flex-end; padding-top: 20px;}
+
+#member_form form .form .add_btn button{width: 20%; height: 40px; border: none; background-color: #222; color: #fff; font-weight: 500; cursor: pointer; transition: opacity 0.3s;}
+#member_form form .form .add_btn button:hover{opacity: 0.8;}
+
+#member_form form .form.phone .label_box{padding-bottom: 20px;}
+#member_form form .form.phone select{width: calc(100% / 3 - 5px); height: 40px; text-align: center;}
+#member_form form .form.phone input{width: calc(100% / 3 - 5px); height: 40px; text-align: center;}
+
+#member_form form .form .input_box.email_input{display: flex; align-items: center;}
+#member_form form .form .input_box.email_input input{text-align: center;}
+#member_form form .form .input_box.email_input span{margin: 0 10px;}
+
+#member_form form .buttons{display: flex; justify-content: space-between; padding-top: 50px;}
+#member_form form .buttons button{width: 49%; height: 40px; border: none; background-color: rgb(255, 215, 57); color: #fff; font-weight: 600; cursor: pointer; transition: opacity 0.3s; letter-spacing: 5px;}
+#member_form form .buttons button:last-child{background-color: #222;}
+#member_form form .buttons button:hover{opacity: 0.8;}

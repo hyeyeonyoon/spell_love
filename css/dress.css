@@ -1,0 +1,35 @@
+@charset "utf-8";
+
+#dress{padding: 300px 0 100px;}
+
+#dress .wrap{width: 1200px; margin: 0 auto;}
+#dress .wrap h2{padding-bottom: 80px; text-align: center; color: #111; font-size: 24px; font-weight: 600; letter-spacing: 2px; line-height: 22px;}
+
+#dress .wrap .upper{width: 100%; padding: 0 20px 40px; display: flex; justify-content: space-between; align-items: center;}
+#dress .wrap .upper .bread_crumb{}
+#dress .wrap .upper .bread_crumb ul{display: flex;}
+#dress .wrap .upper .bread_crumb ul li{margin: 0 5px;}
+#dress .wrap .upper .bread_crumb ul span{}
+#dress .wrap .upper .bread_crumb ul li a{display: block; font-size: 14px; color: #000; position: relative;}
+#dress .wrap .upper .bread_crumb ul li a:before{content: ""; position: absolute; bottom: 0; left: 0; width: 0%; height: 1px; background-color: #000;}
+#dress .wrap .upper .bread_crumb ul li:hover a:before{width: 100%;}
+
+#dress .wrap .upper .sort{}
+#dress .wrap .upper .sort select{border: 1px solid #aaa; width: 150px; height: 30px; text-align: center; font-size: 12px; color: #333;}
+#dress .wrap .upper .sort select option{}
+
+#dress .wrap .container{padding: 0 10px; display: flex; flex-wrap: wrap;}
+#dress .wrap .container .box{width: calc(25% - 20px); height: 500px; margin: 0 10px;}
+
+#dress .wrap .container .box .img{width: 100%; height: 80%; background-image: url(../img/dress/dress_01.jpg); background-size: cover; background-position: 50% 50%; position: relative; overflow: hidden;}
+
+#dress .wrap .container .box .img .add_bag{display: block; width: 100%; height: 40px; position: absolute; left: 0; bottom: 0; display: flex; justify-content: space-between; align-items: center; padding: 0 20px; background-color: rgba(255,255,255,0.6); opacity: 0; z-index: -1; transition: opacity 0.3s;}
+#dress .wrap .container .box .img .add_bag .txt{display: block; height: 100%; font-size: 16px; color: #333; font-weight: 600; letter-spacing: 1px; text-align: left;}
+#dress .wrap .container .box .img .add_bag .fav{display: block; width: 30px; height: 30px; background-image: url(../img/icon/bag_icon.png); background-size: contain; background-repeat: no-repeat; filter: invert(20%); cursor: pointer;}
+
+#dress .wrap .container .box .img:hover .add_bag{opacity: 1; z-index: 0;}
+
+
+#dress .wrap .container .box .txt{width: 100%; height: 20%; text-align: center; padding: 10px 0;}
+#dress .wrap .container .box .txt .title{display: block; font-size: 14px; color: #000; font-weight: 600;}
+#dress .wrap .container .box .txt .price{display: block; font-size: 14px; padding-dress: 5px;}
