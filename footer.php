@@ -1,6 +1,6 @@
 <div class="company">
     <div class="upper">
-        <div class="logo"><p>Spell&Love</p></div>
+        <div class="logo"><a href="./index.php">Spell&Love</a></div>
         <div class="sns">
             <ul>
                 <li><a href=""><img src="./img/icon/sns_instagram.png" alt=""></a></li>
@@ -11,19 +11,15 @@
         </div>
     </div>
     <div class="downer">
-        <ul>
-            <li><a href="">윤혜연 주식회사</a></li>
-            <li><a href="">nyeyeon@naver.com</a></li>
-            <li><a href="">010-8642-5070</a></li>
-            <li><a href="">03961 서울특별시 마포구 방울내로7길 8 (망원동) 반석빌딩 3층</a></li>
-            <li><a href="">2F, 14, Dosan-daero 67-gil, Gangnam-gu, Seoul, Republic of Korea</a></li>
-            <li><a href="">CS 고객센터 운영시간 : 연중무휴</a></li>
-        </ul>
+        <p><a href="mailto:nyeyeon@naver.com">nyeyeon@naver.com</a></p>
+        <p><a href="tel:010-8642-5070">010-8642-5070</a></p>
+        <p class="terms"><a href="terms.php">이용약관</a></p>
+        <p class="faq"><a href="faq.php">FAQ</a></p>
     </div>
 </div>
 <div class="copyrights">
     <p>copyrights &copy; 2022 HYEYEON YOON</p>
 </div>
 <div id="top_icon">
-    <a href="">↑</a>
+    <a href="">↑ <span class="hide">위로가기</span></a>
 </div>

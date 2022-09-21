@@ -4,15 +4,14 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Spell&Love - 로그인</title>
+  <title>로그인</title>
   <link rel="stylesheet" href="./css/common.css">
   <link rel="stylesheet" href="./css/login.css">
 </head>
 <body>
-  <header>
+  <header>  
     <?php include "./header.php"?>
   </header>
-
 
   <div id="login">
     <div class="img"></div>
@@ -38,9 +37,9 @@
       <div class="register_box">
         <h2>회원가입</h2>
         <div class="txt">
-          <p>- Receive exclusive access to sale previews.</p>
-          <p>- Enjoy special offers throughout the year.</p>
-          <p>- Easy order management and quick checkout.</p>
+          <p>신규 가입시 무료 배송 쿠폰 지급</p>
+          <p>회원 가입 후, 첫 구매 고객에게 최대 만원 할인 쿠폰 지급</p>
+          <p>매년 생일 쿠폰 지급</p>
         </div>
         <div id="register_btn">
           <button type="button"><a href="./member_form.php">회원가입</a></button>
@@ -48,7 +47,6 @@
       </div>
     </div>
   </div>
-
 
   <footer>
     <?php include "./footer.php"?>

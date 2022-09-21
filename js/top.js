@@ -16,12 +16,12 @@ for(v of $top_arr){
     <div class="box">
       <div class="img" style="background-image: url(./img/top/${v[0]});">
         <span class="add_bag">
-          <span class="txt">Add to WishList</span>
+          <span class="txt">ADD TO BAG</span>
           <span class="fav"></span>
         </span>
       </div>
       <div class="txt">
-        <a href="" class="title">${v[1]}</a>
+        <a href="./outer_detail.php" class="title">${v[1]}</a>
         <span class="price">${v[2]}</span>
       </div>
     </div>

@@ -43,6 +43,17 @@
         </div>
         -->
       </div>
+      <div class="paging">
+        <a href="#" class="direction first">처음</a>
+        <a href="#" class="direction prev">이전</a>
+        <a href="#" class="num active">1</a>
+        <a href="#" class="num">2</a>
+        <a href="#" class="num">3</a>
+        <a href="#" class="num">4</a>
+        <a href="#" class="num">5</a>
+        <a href="#" class="direction next">다음</a>
+        <a href="#" class="direction end">끝</a>
+      </div>
     </div>
   </div>
 

@@ -21,7 +21,7 @@ $(document).ready(function(){
 
   $(".minus").click(function(){
     if($num < 2){
-      
+      alert("최소 수량은 1개 입니다.");
     }else{
       $num--;
       $(this).siblings("input").val($num);
@@ -41,13 +41,38 @@ $(document).ready(function(){
   });
 
 
-  //datail description
-  $(".product_description div:nth-child(2)").hide();
-  $(".product_description div:nth-child(3)").hide();
-  
-  let $detail = $(".detail_title ul li");
-  for(v of $detail){
-    console.log(v);
-    let $index = v.index();
-  }
+  //size list
+  $("#detail .size_list ul li").on("click", function(){
+    if($(this).hasClass("active")){
+      $(this).removeClass("active");
+    }else{
+      $(this).addClass("active").siblings('li').removeClass("active");
+    }
+  });
+
+
+  //size guide
+  $(".size_guide").click(function(){
+    $(".size_popup").css("display","block");
+    $(".dark").addClass("active");
+    $(".title").click(function(){
+      $(this).siblings(".content").slideToggle(200);
+      $(this).closest("li").siblings("li").children(".content").slideUp(200);
+    });
+  });
+  $(".close_btn").click(function(){
+    $(".size_popup").css("display","none");
+    $(".dark").removeClass("active");
+  });
+
+
+  //product description
+  $(".product_description div").eq(0).addClass("show");
+  $(".detail_title ul li").click(function(){
+    var $index = $(this).index();
+    $(".product_description div").removeClass("show");
+    $(".product_description div").eq($index).addClass("show");
+  });
 });
+
+

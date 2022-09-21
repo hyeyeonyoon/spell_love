@@ -23,9 +23,9 @@
 
 #top .wrap .container .box .img{width: 100%; height: 80%; background-image: url(../img/top/top_01.jpg); background-size: cover; background-position: 50% 50%; position: relative; overflow: hidden;}
 
-#top .wrap .container .box .img .add_bag{display: block; width: 100%; height: 40px; position: absolute; left: 0; bottom: 0; display: flex; justify-content: space-between; align-items: center; padding: 0 20px; background-color: rgba(255,255,255,0.6); opacity: 0; z-index: -1; transition: opacity 0.3s;}
+#top .wrap .container .box .img .add_bag{display: block; width: 100%; height: 40px; position: absolute; left: 0; bottom: 0; display: flex; justify-content: space-between; align-items: center; padding: 0 20px; background-color: rgba(255,255,255,0.6); cursor: pointer; opacity: 0; z-index: -1; transition: opacity 0.3s;}
 #top .wrap .container .box .img .add_bag .txt{display: block; height: 100%; font-size: 16px; color: #333; font-weight: 600; letter-spacing: 1px; text-align: left;}
-#top .wrap .container .box .img .add_bag .fav{display: block; width: 30px; height: 30px; background-image: url(../img/icon/bag_icon.png); background-size: contain; background-repeat: no-repeat; filter: invert(20%); cursor: pointer;}
+#top .wrap .container .box .img .add_bag .fav{display: block; width: 30px; height: 30px; background-image: url(../img/icon/bag_icon.png); background-size: contain; background-repeat: no-repeat; filter: invert(20%);}
 
 #top .wrap .container .box .img:hover .add_bag{opacity: 1; z-index: 0;}
 
@@ -33,3 +33,25 @@
 #top .wrap .container .box .txt{width: 100%; height: 20%; text-align: center; padding: 10px 0;}
 #top .wrap .container .box .txt .title{display: block; font-size: 14px; color: #000; font-weight: 600;}
 #top .wrap .container .box .txt .price{display: block; font-size: 14px; padding-top: 5px;}
+
+/* paging */
+#top .wrap .paging{text-align: center; white-space: nowrap; padding-top: 50px;}
+#top .wrap .paging a + a{margin-left: 10px;}
+#top .wrap .paging a{display: inline-block; height: 28px; line-height: 28px; border: 1px solid #ccc; color: #666; text-align: center; transition: 0.1s;}
+#top .wrap .paging a.num{min-width: 28px; font-size: 14px; font-weight: 300;}
+#top .wrap .paging a.direction{width: 28px; background-repeat: no-repeat; background-position: center; background-size: 20px auto; text-indent: -9999px}
+#top .wrap .paging a.first{background-image: url(../img/svg/chevrons-left.svg);}
+#top .wrap .paging a.prev{background-image: url(../img/svg/chevron-left.svg);}
+#top .wrap .paging a.next{background-image: url(../img/svg/chevron-right.svg);}
+#top .wrap .paging a.end{background-image: url(../img/svg/chevrons-right.svg);}
+#top .wrap .paging a:hover{background-color: #eee;}
+#top .wrap .paging a.active{font-weight: 500; color: #000; border-color: #000}
+
+@media (max-width:1199px){
+  #top .wrap{width: 100%;}
+}
+@media (max-width:991px){
+  #top .wrap .container .box{width: calc(50% - 20px);}
+}
+@media (max-width:767px){
+}

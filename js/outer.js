@@ -17,7 +17,7 @@ for(v of $outer_arr){
       <div class="content">
         <div class="img" style="background-image: url(./img/outer/${v[0]});"><a href="./outer_detail.php"></a></div>
         <span class="add_bag">
-          <span class="txt">Add to WishList</span>
+          <span class="txt">ADD TO BAG</span>
           <span class="fav"></span>
         </span>
       </div>

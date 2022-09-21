@@ -7,9 +7,6 @@ const $bottom_arr = [
   ["bottom_06.jpg", "벨티드 울 자켓", "210,000원"],
   ["bottom_07.jpg", "캐시미어 벨티드 롱 코트", "285,000원"],
   ["bottom_08.jpg", "쇼트 패딩", "230,000원"],
-  ["bottom_09.jpg", "모헤어 롱 코트", "355,000원"],
-  ["bottom_10.jpg", "울 자켓", "320,000원"],
-  ["bottom_11.jpg", "벨티드 자켓", "265,000원"],
 ];
 
 const $bottom_container = document.querySelector("#bottom .wrap .container");
@@ -20,12 +17,12 @@ for(v of $bottom_arr){
       <div class="content">
         <div class="img" style="background-image: url(./img/bottom/${v[0]});"></div>
         <span class="add_bag">
-          <span class="txt">Add to WishList</span>
+          <span class="txt">ADD TO BAG</span>
           <span class="fav"></span>
         </span>
       </div>
       <div class="txt">
-        <a href="" class="title">${v[1]}</a>
+        <a href="./outer_detail.php" class="title">${v[1]}</a>
         <span class="price">${v[2]}</span>
       </div>
     </div>

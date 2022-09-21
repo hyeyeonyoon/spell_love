@@ -1,0 +1,41 @@
+@charset "utf-8";
+
+.faq_wrap{width: 1200px; margin: 0 auto; padding: 200px 10px 100px;}
+.faq_wrap h2{font-size: 20px; color: #555; text-align: center; padding-bottom: 40px;}
+.faq_wrap .tab_menu{display: flex;}
+.faq_wrap .tab_menu > li{flex: 1; border: 1px solid #ccc; border-left: none;}
+.faq_wrap .tab_menu > li:first-child{border-left: 1px solid #ccc;}
+.faq_wrap .tab_menu > li.active{border-bottom: 1px solid #fff;}
+.faq_wrap .tab_menu > li button{display: block; width: 100%; line-height: 40px; color: #888; background-color: #fff;}
+.faq_wrap .tab_menu > li.active button{color: #000; background-color: #eee;}
+
+.faq_wrap .tab_cont{padding: 10px; border: 1px solid #ccc; border-top: none; display: none;}
+.faq_wrap .tab_cont > ul{border: 1px solid #ccc; border-radius: 5px; overflow: hidden;}
+.faq_wrap .tab_cont > ul > li{border-top: 1px solid #ccc;}
+.faq_wrap .tab_cont > ul > li:first-child{border-top: none;}
+.faq_wrap .tab_cont > ul > li .link{cursor: pointer;}
+.faq_wrap .tab_cont > ul > li .title{position: relative; padding: 15px;}
+.faq_wrap .tab_cont > ul > li .title p{font-size: 14px; color: #333;}
+.faq_wrap .tab_cont > ul > li .title .arrow{position: absolute; top: 50%; right: 10px; width: 30px; height: 30px; background: url(../img/svg/chevron-down.svg) no-repeat center; background-size: 100%; transform: translateY(-50%); transition: all .2s;}
+
+.faq_wrap .tab_cont > ul > li.opened .title{font-weight: 500;}
+.faq_wrap .tab_cont > ul > li.opened .title .arrow{transform: translateY(-50%) rotate(180deg);}
+
+.faq_wrap .tab_cont > ul > li .cont{padding: 15px; color: #555; background-color: #fff; border-top: 1px solid #ccc; line-height: 1.35;}
+.faq_wrap .tab_cont > ul > li .cont p{padding-bottom: 10px;}
+.faq_wrap .tab_cont > ul > li .cont ol{padding-left: 20px;}
+.faq_wrap .tab_cont > ul > li .cont ol > li{list-style: decimal; padding: 5px 0;}
+.faq_wrap .tab_cont > ul > li .cont ol > li ul{}
+.faq_wrap .tab_cont > ul > li .cont ol > li ul li{padding: 5px 0;}
+
+.faq_wrap .tab_cont > ul > li .cont ul{}
+.faq_wrap .tab_cont > ul > li .cont ul li{padding: 5px 0;}
+.faq_wrap .tab_cont > ul > li .cont ul li::before{content: "-"; margin-right: 5px;}
+
+@media (max-width:1199px){
+  .faq_wrap{width: 100%;}
+}
+@media (max-width:991px){}
+@media (max-width:767px){}
+
+

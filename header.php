@@ -26,10 +26,10 @@
 <div class="main_header">
   <div class="wrap">
     <div class="ham_btn">
-      <img src="./img/icon/hamburger_icon.svg" alt="메뉴 아이콘">
+      <img src="./img/svg/hamburger_icon.svg" alt="메뉴 아이콘">
     </div>
     <div class="logo">
-      <a href="./index.php">Spell&Love</a>
+      <h1><a href="./index.php">Spell&Love</a></h1>
     </div>
     <div class="menu">
       <span class="close_btn"></span>
@@ -48,17 +48,16 @@
   if(!$userid){
 ?>
         <li class="login"><a href="./login_form.php">Login</a></li>
-        <li><a href="./login_form.php"><img src="./img/icon/user_icon_empty.png" alt="사람 아이콘"></a></li>
+        <li><a href="./login_form.php"><img src="./img/icon/user_icon_empty.png" alt="로그아웃하기"></a></li>
 <?php
   }else{
 ?>
         <li class="logout"><a href="./logout.php">Logout</a></li>
-        <li><a href="./member_modify_form.php"><img src="./img/icon/user_icon_empty.png" alt="사람 아이콘"></a></li>
+        <li><a href="./member_modify_form.php"><img src="./img/icon/user_icon_empty.png" alt="로그인하기"></a></li>
 <?php
   }
 ?>
-        <li><a href=""><img src="./img/icon/bag_icon.png" alt="장바구니 아이콘"></a></li>
-        <li class="search_icon"><a href=""><img src="./img/icon/search_icon.png" alt="돋보기 아이콘"></a></li>
+        <li class="search_icon"><a href=""><img src="./img/icon/search_icon.png" alt="검색하기"></a></li>
       </ul>
     </div>
   </div>
@@ -68,6 +67,6 @@
 <div id="pop_layer">
   <div class="container">
     <input type="text" placeholder="검색어를 입력하세요.">
-    <button class="close_btn" onclick="CloseSearch()"><img src="./img/icon/close_icon.png" alt=""></button>
+    <button class="close_btn" type="button" onclick="CloseSearch()"><img src="./img/icon/close_icon.png" alt="닫기"></button>
   </div>
 </div>

@@ -1,0 +1,23 @@
+@charset "utf-8";
+
+.term_page{}
+.term_page .wrap{width: 100%; padding: 150px 10px 50px; margin: 0 auto;}
+.term_page .wrap .head{padding-bottom: 10px;}
+.term_page .wrap .head h1{color: #333; font-size: 22px; font-weight: 700; text-align: center;}
+.term_page .wrap .body{}
+.term_page .wrap .body h2{padding: 40px 0 15px; color: #333; font-size: 20px; font-weight: 600;}
+.term_page .wrap .body ul{}
+.term_page .wrap .body ul > li{padding-bottom: 10px; margin-left: 20px; font-size: 18px; color: #444; line-height: 1.6;}
+.term_page .wrap .body ol{}
+.term_page .wrap .body ol > li{padding-bottom: 10px; margin-left: 35px; font-size: 18px; color: #444; line-height: 1.6; list-style: decimal;}
+.term_page .wrap .body ol > li ol{padding-top: 10px; margin-left: -15px;}
+.term_page .wrap .body ol > li ol li{list-style: lower-alpha;}
+
+@media (max-width:1199px){
+  .term_page .wrap{width: 100%;}
+  .term_page .wrap .body h2{font-size: 18px;}
+  .term_page .wrap .body ul li{font-size: 14px;}
+  .term_page .wrap .body ol li{font-size: 14px;}
+}
+@media (max-width:991px){}
+@media (max-width:767px){}
