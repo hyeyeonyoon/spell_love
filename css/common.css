@@ -21,7 +21,7 @@ header .main_header .wrap{display: flex; justify-content: space-between; align-i
 
 header .main_header .wrap .ham_btn{display: none;}
 
-header .main_header .wrap .logo{margin-left: 140px;}
+header .main_header .wrap .logo{}
 header .main_header .wrap .logo h1{}
 header .main_header .wrap .logo h1 a{display: block; font-size: 28px; font-weight: 600; letter-spacing: 2px; color: #000;}
 header .main_header .wrap .logo:hover h1 a{color: #555; transition: color 0.2s;}
@@ -89,6 +89,7 @@ footer .copyrights p{color: #999;}
 
 
 @media (max-width:1199px){
+  header .main_header .wrap .logo{margin-left: 140px;}
   header .main_header .wrap .ham_btn{display: block; cursor: pointer;}
   header .main_header .wrap .menu{position: fixed; top: 0; left: -100%; width: 50%; height: 100vh; padding: 40px 0; background-color: #fff; z-index: 10; transition: left 0.3s;}
   header .main_header .wrap .menu.active{left: 0;}
